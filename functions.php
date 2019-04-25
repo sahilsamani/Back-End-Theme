@@ -16,6 +16,8 @@ add_action('wp_enqueue_scripts','the_archive_files');
 /*This block of code will update the title tag on each page. So each page will have its unique title tag*/
 function the_archive_features () {
     
+    
+    
     add_theme_support('title-tag');
 }
 

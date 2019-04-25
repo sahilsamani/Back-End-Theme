@@ -1,3 +1,5 @@
+<!--This page is dedicated to individual pages-->
+
 <?php
 
 
