@@ -17,9 +17,9 @@
             <div class="site-header__menu group">
                 <nav class="main-navigation">
                     <ul>
-                        <li><a href="<?php echo site_url('/about') ?>">About Us</a></li>
+                        <li <?php if (is_page('about') or wp_get_post_parent_id(0) == 16) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/about') ?>">About Us</a></li>
                         <li><a href="#">Stories</a></li>
-                        <li><a href="<?php echo site_url('/news') ?>">News</a></li>
+                        <li <?php if (get_post_type() == 'post') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/news') ?>">News</a></li>
                         <li><a href="#">Location</a></li>
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Get in Touch</a></li>

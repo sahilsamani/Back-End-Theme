@@ -21,4 +21,5 @@ function the_archive_features () {
     add_theme_support('title-tag');
 }
 
+/*These lines of code introduce WordPress functions that are used to create the theme of the web page and the custom post type*/
 add_action('after_setup_theme', 'the_archive_features');
