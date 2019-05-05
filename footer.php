@@ -15,9 +15,9 @@
             <nav class="nav-list">
               <ul>
                 <li><a href="<?php echo site_url('/about') ?>">About Us</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Campuses</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="<?php echo site_url('/Get in Touch') ?>">Get in Touch</a></li>
               </ul>
             </nav>
           </div>
@@ -26,7 +26,7 @@
             <h3 class="headline headline--small">Learn</h3>
             <nav class="nav-list">
               <ul>
-                <li><a href="#">News</a></li>
+                <li><a href="<?php echo site_url('/news') ?>">News</a></li>
                 <li><a href="<?php echo site_url('/stories') ?>">Stories</a></li>
               </ul>
             </nav>
@@ -34,16 +34,12 @@
         </div>
 
         <div class="site-footer__col-four">
-          <h3 class="headline headline--small">Connect With Us</h3>
-          <nav>
-            <ul class="min-list social-icons-list group">
-              <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-          </nav>
+          <h3 class="headline headline--small"></h3>
+            
+            This website was produced by students in the Faculty of Arts & Design, University of Canberra. 
+            The content is extracted from the Tocumwal Houses Archive in the [ACT Heritage Library Manuscripts Collection]
+            Make text in square brackets a link to this page: https://www.library.act.gov.au/find/history/search/Manuscript_Collections/hmss_0074_tocumwal_houses_archive
+          
         </div>
       </div>
 

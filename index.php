@@ -32,10 +32,12 @@ get_header(); ?>
             <?php the_excerpt();  ?>
 
             <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo;</a></p>
-
-        </div>
+            
+            </div>
 
     </div>
+    
+    <?php echo do_shortcode('[maxbutton id="2"]'); ?>
 
     <!--This block of code will add a pagination to the news blog page    -->
     <?php  }

@@ -23,3 +23,32 @@ function the_archive_features () {
 
 /*These lines of code introduce WordPress functions that are used to create the theme of the web page and the custom post type*/
 add_action('after_setup_theme', 'the_archive_features');
+
+/*Redirect Subscriber accounts out of admin and onto homepage*/
+
+add_action('admin_init', 'redirectSubsToFrontend');
+
+function redirectSubsToFrontend() {
+    
+    $ourCurrentUser = wp_get_current_user();
+    
+    if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber')  {
+        
+        wp_redirect(site_url('/'));
+        exit;
+    }
+    
+
+}
+
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = 'AIzaSyDbCkqU2xRDQyZ5fczZ0KRdsMGvT7t5u7w';
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+
