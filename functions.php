@@ -40,3 +40,13 @@ function redirectSubsToFrontend() {
     
 
 }
+//Customize the Login Screen
+
+add_filter('login_headerurl', 'theHeaderUrl');
+
+function theHeaderUrl() {
+    
+    return esc_url(site_url('/'));
+}
+
+//curl -X POST https://sahils.sgedu.site/wp-admin/admin-ajax.php -d 'action=query-attachments&post_id=0&query[orderby]=date&query[order]=DESC&query[post_per_page]=40&query[paged]=1'

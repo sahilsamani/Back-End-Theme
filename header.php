@@ -23,7 +23,7 @@
                         <li><a href="<?php echo site_url('/news') ?>">News</a></li>
                         <li><a href="<?php echo site_url('/Add News') ?>">Add News</a></li>
                         <li><a href="#">Location</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li><a href="<?php echo site_url('/gallery') ?>">Gallery</a></li>
                         <li><a href="<?php echo site_url('/Get in Touch') ?>">Get in Touch</a></li>
                     </ul>
 
@@ -37,8 +37,8 @@
                     </a>
 
                     <?php } else { ?>
-                    <a href="<?php echo esc_url(site_url('/wp-login.php')); ?>" class="btn btn--small btn--orange float-left push-right">Login</a>
-                    <a href="<?php echo esc_url(site_url('/wp-signup.php')); ?>" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
+                    <a href="<?php echo wp_login_url(); ?>" class="btn btn--small btn--orange float-left push-right">Login</a>
+                    <a href="<?php echo wp_registration_url(); ?>" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
 
                     <?php } ?>
 
